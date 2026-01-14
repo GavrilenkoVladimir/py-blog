@@ -12,11 +12,13 @@
   <link rel="stylesheet" href="{% static "css/styles.css" %}">
 </head>
 <body>
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
 {% block content %}
-<h1>This is just base page</h1>
 {% endblock  %}
 {% block pagination %}
-  <h3>Some day i will add here pagination</h3>
+  {% include "includes/pagination.html" %}
 {% endblock %}
 </body>
 </html>
